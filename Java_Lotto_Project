@@ -1,0 +1,108 @@
+ackage pl.coderslab.lotto;
+
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.Collections;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Arrays;
+
+import org.apache.commons.lang3.ArrayUtils;
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+				
+		Integer [] lottoNumbers = getLottoNumbers();
+		Integer [] enteredNumbers = getEnteredNumbers();
+		
+		//checkWins(getLottoNumbers,enteredNumbers);
+	}	
+	static Integer[] getLottoNumbers() {
+		//creates an array of 49 different numbers
+		Integer [] array = new Integer[49];
+		for (int i=0; i<array.length; i++) {
+			array[i] = i + 1;
+		}
+		System.out.println(Arrays.toString(array));
+		
+		//shuffle the numbers within an array
+		Collections.shuffle(Arrays.asList(array));
+		System.out.println(Arrays.toString(array));
+		
+		int[]  lottoNumbers = new int [6];
+			for(int i = 0; i<lottoNumbers.length; i++) {
+				lottoNumbers[i] = array[i];
+			}
+		System.out.println("Lotto numbers: " + Arrays.toString(lottoNumbers));
+		//return lottoNumbers;
+		return array;
+		
+	}
+	static Integer [] getEnteredNumbers(){
+		Scanner scan = new Scanner(System.in);
+		ArrayList<Integer> enteredList = newArrayList<>();
+	}
+}
+
+		
+		
+		
+		int[] chosenNumbers = new int[6];
+		//Scanner scan = new Scanner(System.in);
+		
+		//int[] chosenNumbers = new int[6];
+		//boolean areChosenNumbersCorrect = false;
+			Set<Integer> set = new HashSet<Integer>();
+			try {
+				while (enteredNumbers.size() < 6) {
+			        int number = scan.nextInt();
+			        enteredNumbers.add(number);
+				String enteredNumbersList[] = scan.nextLine().split(",");
+				    }
+				System.out.println(enteredNumbers);
+			//Set<Integer> set = new HashSet<Integer>();
+			//try {
+				//while (enteredNumbers.size() < 6) {
+			        //int number = scan.nextInt();
+			        //enteredNumbers.add(number);
+				//String enteredNumbersList[] = scan.nextLine().split(",");
+				   // }
+				//System.out.println(enteredNumbers);
+			    
+	         System.out.println(set);
+			}
+	        // System.out.println(set);
+			//}
+		//public static Set<Integer> getEnteredNumbers() {
+		    //Set<Integer> enteredNumbers = new TreeSet<Integer>();
+		    //Scanner scan = new Scanner(System.in);
+		    
+			System.out.println("Please enter 6 numbers from 1 to 49 separated by commas");
+			while (enteredNumbers.size() < 6) {
+		        int number = scan.nextInt();
+		        enteredNumbers.add(number);
+			String enteredNumbersList[] = scan.nextLine().split(",");
+			    }
+			System.out.println(enteredNumbers);
+			//System.out.println("Please enter 6 numbers from 1 to 49 separated by commas");
+			//while (enteredNumbers.size() < 6) {
+		        //int number = scan.nextInt();
+		        //enteredNumbers.add(number);
+			//String enteredNumbersList[] = scan.nextLine().split(",");
+			   // }
+			//System.out.println(enteredNumbers);
+			
+		}
+	}
+}
+		//}
+	//}
+//}
+
+
+			   // return enteredNumbers;
